@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gretta Martin — Threat Intelligence & Security</title>
+  <meta name="description" content="Portfolio and writing by Gretta Martin — security, threat intelligence, and ethical tech." />
+  <style>
+    :root { --bg:#0b0f14; --card:#111827; --muted:#9ca3af; --txt:#e5e7eb; --accent:#60a5fa; --glow: 0 0 0 1px rgba(96,165,250,.2), 0 10px 30px -12px rgba(96,165,250,.35);}    
+    *{box-sizing:border-box}
+    body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background:linear-gradient(180deg,#0b0f14,#0b0f14 55%, #0e1623 100%);color:var(--txt)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:28px}
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;color:var(--muted);backdrop-filter: blur(6px);background:rgba(255,255,255,.03)}
+    header{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;margin:8px 0 22px}
+    nav a{margin-left:18px;color:var(--muted)}
+    .hero{display:grid;gap:12px;margin:36px 0 22px}
+    h1{font-size:clamp(28px,4.2vw,44px);line-height:1.1;margin:0}
+    .sub{color:var(--muted);font-size:clamp(14px,2vw,18px)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:linear-gradient(180deg,#0f172a,#0b1220);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px 18px 16px;box-shadow:var(--glow)}
+    @media(min-width:860px){.card.half{grid-column:span 6}}
+    h2{font-size:20px;margin:6px 0 8px}
+    .muted{color:var(--muted)}
+    .list{display:grid;gap:12px;margin:10px 0 0;padding:0;list-style:none}
+    .item{padding:12px;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.02)}
+    .tag{display:inline-block;margin-right:8px;margin-top:8px;padding:2px 8px;border-radius:999px;background:rgba(96,165,250,.12);color:#bfdbfe;border:1px solid rgba(96,165,250,.35);font-size:12px}
+    footer{margin:48px 0 8px;color:var(--muted);font-size:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04)}
+    .btn:hover{background:rgba(255,255,255,.07)}
+    .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <span class="pill">🔎 Threat Intelligence</span>
+        <span class="pill">🌍 Middle East Focus</span>
+        <span class="pill">🧪 Security Research</span>
+      </div>
+      <nav>
+        <a href="#briefs">Briefs</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Gretta Martin</h1>
+      <p class="sub">Computer Science (CSB/SJU ’26) · Aspiring Threat Intelligence Analyst. I study cyber operations and regional dynamics, and I write short, decision-focused briefs that turn signals into action.</p>
+      <div class="row">
+        <a class="btn" href="#briefs">Read briefs</a>
+        <a class="btn" href="#projects">See projects</a>
+        <a class="btn" href="resume.pdf">Download résumé (PDF)</a>
+      </div>
+    </section>
+
+    <section id="briefs" class="grid">
+      <div class="card">
+        <h2>Latest Briefs</h2>
+        <p class="muted">Concise, sourcing-first reporting. Each item: executive summary · key indicators · likely scenarios · defensive recommendations.</p>
+        <ul class="list">
+          <li class="item">
+            <strong>[SAMPLE] APT34 (OilRig): Recent Phishing TTPs Against Higher Ed</strong>
+            <div class="muted">ExecSum: Increased phishing waves target .edu accounts using OAuth consent grants. <span class="mono">T1589, T1566.002</span>. Likely to continue next 30–60 days.</div>
+            <div>
+              <span class="tag">Iran</span><span class="tag">Phishing</span><span class="tag">OAuth</span><span class="tag">MITRE ATT&CK</span>
+            </div>
+          </li>
+          <li class="item">
+            <strong>[SAMPLE] Telegram OSINT: Militia Channel Network Mapping (Iraq)</strong>
+            <div class="muted">ExecSum: Coordinated narrative amplification across 12 channels; shared link infrastructure suggests common operator.</div>
+            <div>
+              <span class="tag">OSINT</span><span class="tag">Narrative Analysis</span><span class="tag">Graph</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="grid" style="margin-top:18px;">
+      <div class="card half">
+        <h2>Projects</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>APT One-Pager Generator</strong> — Python script that ingests public IOCs and TTPs and outputs a printable one-page profile.
+            <div class="muted">Repo: <a href="#">github.com/gretta/apt-onepager</a> · Stack: Python, Jinja2</div>
+          </li>
+          <li class="item">
+            <strong>ATT&CK-of-the-Day Notes</strong> — Daily notes on one technique with detection ideas.
+            <div class="muted">Repo: <a href="#">github.com/gretta/attack-notes</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="card half">
+        <h2>Focus Areas</h2>
+        <ul class="list">
+          <li class="item"><strong>Regional:</strong> Iran · Levant · Gulf cyber capability & proxy dynamics</li>
+          <li class="item"><strong>Tradecraft:</strong> Open-source collection, link analysis, structured analytic techniques</li>
+          <li class="item"><strong>Defender Lens:</strong> SOC-ready detections; ATT&CK-mapped recommendations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="grid" style="margin-top:18px;">
+      <div class="card">
+        <h2>About</h2>
+        <p>I’m a senior CS major at the College of Saint Benedict (MN) and incoming applicant to the University of Minnesota’s M.S. in Security Technologies. My research interests include threat intelligence, OSINT, and ethics of autonomous systems. I publish brief, sourced reports and build small tools that translate signals into action for defenders.</p>
+        <p class="muted">This site is intentionally lightweight (plain HTML + CSS) for easy hosting on GitHub Pages. Replace sample content with your work as you go.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="grid" style="margin-top:18px;">
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="muted">Best email for professional outreach:</p>
+        <p><a href="mailto:gretta@example.com">gretta@example.com</a> · <a href="#">LinkedIn</a> · <a href="#">GitHub</a></p>
+        <p class="muted">Optional: publish a PGP key here later.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Gretta Martin · Built for GitHub Pages</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
