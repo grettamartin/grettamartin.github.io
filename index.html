@@ -3,175 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gretta Martin - Portfolio</title>
 
-  <style>
-    :root {
-      --bg:#f8fafc;
-      --card:#ffffff;
-      --border:#e5e7eb;
-      --txt:#0f172a;
-      --muted:#64748b;
-      --accent:#2563eb;
-      --accent-soft:#eff6ff;
-      --shadow:0 10px 25px rgba(0,0,0,.05);
-    }
+  <title>Gretta Martin</title>
 
-    *{box-sizing:border-box}
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:var(--bg);
-      color:var(--txt);
-      line-height:1.6;
-    }
-
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-
-    .container{
-      max-width:980px;
-      margin:0 auto;
-      padding:32px 24px;
-    }
-
-    /* ---------- Header ---------- */
-
-    header{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:space-between;
-      align-items:center;
-      margin-bottom:28px;
-      gap:16px;
-    }
-
-    nav a{
-      margin-left:18px;
-      color:var(--muted);
-      font-weight:500;
-    }
-
-    .pill{
-      padding:6px 12px;
-      border-radius:999px;
-      background:var(--accent-soft);
-      color:var(--accent);
-      font-size:13px;
-      border:1px solid #dbeafe;
-    }
-
-    .row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-    }
-
-    /* ---------- Hero ---------- */
-
-    .hero{
-      margin:40px 0 28px;
-      display:grid;
-      gap:14px;
-    }
-
-    h1{
-      font-size:clamp(30px,4vw,46px);
-      margin:0;
-      line-height:1.1;
-    }
-
-    .sub{
-      color:var(--muted);
-      font-size:18px;
-      max-width:700px;
-    }
-
-    .btn{
-      padding:10px 14px;
-      border-radius:10px;
-      border:1px solid var(--border);
-      background:white;
-      box-shadow:var(--shadow);
-      font-weight:500;
-    }
-
-    .btn:hover{
-      background:#f1f5f9;
-      text-decoration:none;
-    }
-
-    /* ---------- Layout ---------- */
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:18px;
-      margin-top:18px;
-    }
-
-    .card{
-      grid-column:span 12;
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:20px;
-      box-shadow:var(--shadow);
-    }
-
-    @media(min-width:860px){
-      .card.half{grid-column:span 6}
-    }
-
-    h2{
-      margin-top:0;
-      font-size:20px;
-    }
-
-    .muted{color:var(--muted)}
-
-    .list{
-      list-style:none;
-      padding:0;
-      margin:12px 0 0;
-      display:grid;
-      gap:12px;
-    }
-
-    .item{
-      padding:14px;
-      border:1px solid var(--border);
-      border-radius:10px;
-      background:#fafafa;
-    }
-
-    .tag{
-      display:inline-block;
-      margin-right:6px;
-      margin-top:8px;
-      padding:3px 8px;
-      font-size:12px;
-      border-radius:999px;
-      background:#eef2ff;
-      color:#3730a3;
-      border:1px solid #c7d2fe;
-    }
-
-    .split{
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:6px;
-    }
-
-    footer{
-      margin-top:50px;
-      font-size:14px;
-      color:var(--muted);
-    }
-  </style>
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -181,7 +22,6 @@
   <div class="row">
     <h1>Gretta Martin</h1>
   </div>
-
   <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
@@ -192,170 +32,158 @@
 </header>
 
 <section class="hero">
-
   <div class="row">
-    <a class="btn" href="resume.pdf">Résumé</a>
-    <a class="btn" href="https://github.com/grettamartin">GitHub</a>
-    <a class="btn" href="https://linkedin.com">LinkedIn</a>
+    <a class="btn" href="https://github.com/grettamartin" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/gretta-martin-a99458254" target="_blank" rel="noreferrer">LinkedIn</a>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="grid">
-<div class="card">
-<h2>About</h2>
-<p>
-I am a senior at the College of Saint Benedict graduating in May 2026 with a degree in Computer Science. 
-I have been accepted to the University of Minnesota’s M.S. in Security Technologies program, which I will begin in Fall 2026. 
-The program is designed for working professionals, and I am currently seeking a full-time computing role where I can continue
- developing my technical skills while pursuing graduate study.
-</p>
-</div>
+  <div class="card">
+    <h2>About</h2>
+    <p>
+      I am a senior at the College of Saint Benedict graduating in May 2026 with a degree in Computer Science.
+      I have been accepted to the University of Minnesota’s M.S. in Security Technologies program, which I will begin in Fall 2026.
+      The program is designed for working professionals, and I am currently seeking a full-time computing role where I can continue
+      developing my technical skills while pursuing graduate study.
+    </p>
+  </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="grid">
-<div class="card">
-<h2>Experience</h2>
+  <div class="card">
+    <h2>Experience</h2>
 
-<ul class="list">
+    <ul class="list">
+      <li class="item">
+        <div class="split">
+          <strong>Undergraduate Research — Ethical Simulation Software</strong>
+          <span class="muted">2025–Present</span>
+        </div>
+        <div class="muted">
+          I conducted research on ethical decision-making in autonomous vehicles by developing an interactive simulation
+          software that models real-world scenarios, integrates demographic datasets, and evaluates algorithmic decision outcomes.
+          The project has evolved into a distinguished senior thesis, including the design of an IRB-approved user study to assess
+          the effectiveness of ethics education within computer science curricula.
+        </div>
+      </li>
 
+      <li class="item">
+        <div class="split">
+          <strong>Computer Science Teaching Assistant — CSB/SJU</strong>
+          <span class="muted">2024–Present</span>
+        </div>
+        <div class="muted">
+          I support students across Intro to Computing, Problem Solving & Programming, and Discrete Computational Structures through
+          lab and lecture assistance. I collaborate with faculty to review assignments, verify code correctness, and reinforce programming
+          concepts and debugging strategies. I also provide technical support by troubleshooting software installations and resolving
+          development environment configuration issues across Linux and Windows systems.
+        </div>
+      </li>
 
-
-<li class="item">
-  <div class="split">
-    <strong>Undergraduate Research - Ethical Simulation Software</strong>
-    <span class="muted">2025–Present</span>
+      <li class="item">
+        <div class="split">
+          <strong>Operations Intern — Pella Northland</strong>
+          <span class="muted">2021–2024</span>
+        </div>
+        <div class="muted">
+          I supported daily business operations by developing productivity tracking systems used by office and warehouse employees to
+          monitor weekly performance and progress. I assisted customer experience efforts by answering calls, following up on installations,
+          and tracking customer feedback and reviews. I also audited subcontractor compliance records and coordinated logistics for company
+          events, including organizing an annual Installer Dinner for subcontractors and staff.
+        </div>
+      </li>
+    </ul>
   </div>
-
-  <div class="muted">
-    I conducted research on ethical decision-making in autonomous vehicles by
-    developing an interactive simulation software that models real-world scenarios,
-    integrates demographic datasets, and evaluates algorithmic decision outcomes.
-    The project has evolved into a distinguished senior thesis, including the
-    design of an IRB-approved user study to assess the effectiveness of ethics
-    education within computer science curricula.
-  </div>
-
-</li>
-
- <li class="item">
-  <div class="split">
-    <strong>Computer Science Teaching Assistant - CSB/SJU</strong>
-    <span class="muted">2024–Present</span>
-  </div>
-
-  <div class="muted">
-    I support students across Intro to Computing, Problem Solving & Programming,
-    and Discrete Computational Structures through lab and lecture assistance.
-    I collaborate with faculty to review assignments, verify code correctness,
-    and reinforce programming concepts and debugging strategies. I also provide
-    technical support by troubleshooting software installations and resolving
-    development environment configuration issues across Linux and Windows systems.
-  </div>
-</li>
-
-
-
-<li class="item">
-  <div class="split">
-    <strong>Operations Intern - Pella Northland</strong>
-    <span class="muted">2021–2024</span>
-  </div>
-
-  <div class="muted">
-    I Supported daily business operations by developing productivity tracking
-    systems used by office and warehouse employees to monitor weekly performance
-    and progress. I assisted customer experience efforts by answering calls,
-    following up on installations, and tracking customer feedback and reviews.
-    I also audited subcontractor compliance records and coordinated logistics
-    for company events, including organizing an annual Installer Dinner for
-    subcontractors and staff.
-  </div>
-
-</li>
-
-</ul>
-</div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="grid">
-<div class="card">
-  
-<h2>Projects</h2>
+  <div class="card">
+    <h2>Projects</h2>
 
-<ul class="list">
+    <ul class="list">
+  <li class="item">
+    <div class="item-head">
+      <strong>Ethics in Motion — Research Simulation</strong>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">HTML/CSS</span>
+      </div>
+    </div>
 
-<li class="item">
-<strong>Ethics in Motion - Research Simulation</strong>
-<div class="muted">
-Interactive ethical decision simulation with demographic modeling and web visualization.
-</div>
-<a class="btn" href="ethical-engine.html">View Project</a>
-<span class="tag">Python</span>
-<span class="tag">SQL</span>
-<span class="tag">HTML/CSS</span>
+    <div class="muted">
+      Interactive ethical decision simulation with demographic modeling and web visualization.
+    </div>
+
+    <a class="btn" href="ethical-engine.html">View Project</a>
+  </li>
+
+  <li class="item">
+  <div class="item-head">
+    <strong>College Search Website — Software Development Course Team Project</strong>
+
+    <div class="tags">
+      <span class="tag">Java</span>
+      <span class="tag">HTML/CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">SQL</span>
+    </div>
+  </div>
+
+  <div class="muted">
+    Database-backed web application allowing users to compare schools and filter programs.
+    Built as a team software engineering project.
+  </div>
 </li>
-
-<li class="item">
-<strong>College Search Website - Software Development Course Team Project</strong>
-<div class="muted">
-Database-backed web application allowing users to compare schools and filter programs.
-Built as a team software engineering project.
-</div>
-<span class="tag">Java</span>
-<span class="tag">HTML/CSS</span>
-<span class="tag">JavaScript</span>
-<span class="tag">SQL</span>
-</li>
-
-</ul>
-</div>
+    </ul>
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="grid">
-<div class="card half">
-<h2>Skills</h2>
-<ul class="list">
-<li class="item">Python · Java · C · HTML/CSS</li>
-<li class="item">Git/GitHub · Debugging · Documentation</li>
-<li class="item">Cybesecurity</li>
-<li class="item">CompTIA Security+ Certified</li>
-<li class="item">French, fluent</li>
-</ul>
-</div>
-
-<div class="card half">
-<h2>Relevant Coursework</h2>
-<ul class="list">
-<li class="item">Algorithms & Data Structures</li>
-<li class="item">Ethics in Computing</li>
-<li class="item">Machine Learning</li>
-<li class="item">Databases</li>
-<li class="item">Discrete Computation Structures</li>
-<li class="item">Copmuter</li>
-</ul>
-</div>
+  <div class="card">
+    <h2>Skills / Certifications</h2>
+   <ul>
+      <li><strong>Programming Languages:</strong> Python, Java, C, C++, CSS, HTML, JavaScript, RISC-V </li>
+      <li><strong>Technical:</strong> SQL, Git/GitHub, Databases, Cybersecurity</li>
+      <li><strong>Certifications:</strong> CompTIA Security+</li>
+      <li><strong>Languages:</strong> French, fluent</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Relevant Coursework</h2>
+        <ul class="list coursework-list">
+          <li class="item">Algorithms & Data Structures</li>
+          <li class="item">Computer Organization</li>
+          <li class="item">Databases</li>
+          <li class="item">Data Networks</li>
+          <li class="item">Data Structures</li>
+          <li class="item">Discrete Computation Structures</li>
+          <li class="item">Ethics in Computing</li>
+          <li class="item">Machine Learning</li>
+          <li class="item">Software Development</li>
+        </ul>
+    </div>
 </section>
-
-
 
 <!-- CONTACT -->
 <section id="contact" class="grid">
-<div class="card">
-<h2>Contact</h2>
-<p class="muted">
-<a href="mailto:grettajmartin@gmail.com">grettajmartin@email.com</a> ·
-<a href="https://github.com/grettamartin">GitHub</a> ·
-<a href="www.linkedin.com/in/gretta-martin">LinkedIn</a>
-</p>
-</div>
+  <div class="card">
+    <h2>Contact</h2>
+    <p class="muted">
+      <a href="mailto:grettajmartin@gmail.com">grettajmartin@gmail.com</a> ·
+      <a href="https://github.com/grettamartin" target="_blank" rel="noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/gretta-martin-a99458254" target="_blank" rel="noreferrer">LinkedIn</a>
+    </p>
+  </div>
 </section>
 
 <footer>
-© <span id="y"></span> Gretta Martin
+  © <span id="y"></span> Gretta Martin
 </footer>
 
 </div>
