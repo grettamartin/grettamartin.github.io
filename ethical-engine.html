@@ -1,251 +1,118 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Ethics in Motion — Gretta Martin</title>
+  <title>Gretta Martin </title>
 
-<style>
-:root{
-  --bg:#f8fafc;
-  --card:#ffffff;
-  --border:#e5e7eb;
-  --txt:#0f172a;
-  --muted:#64748b;
-  --accent:#2563eb;
-  --accent-soft:#eff6ff;
-  --shadow:0 10px 25px rgba(0,0,0,.05);
-}
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background:var(--bg);
-  color:var(--txt);
-  line-height:1.6;
-}
-
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-
-.container{
-  max-width:980px;
-  margin:0 auto;
-  padding:32px 24px;
-}
-
-header{
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  align-items:center;
-  margin-bottom:28px;
-}
-
-nav a{
-  margin-left:18px;
-  color:var(--muted);
-  font-weight:500;
-}
-
-.pill{
-  padding:6px 12px;
-  border-radius:999px;
-  background:var(--accent-soft);
-  color:var(--accent);
-  font-size:13px;
-  border:1px solid #dbeafe;
-}
-
-.hero{
-  margin:30px 0;
-}
-
-h1{
-  margin:0;
-  font-size:38px;
-}
-
-.sub{
-  color:var(--muted);
-  max-width:700px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(12,1fr);
-  gap:18px;
-  margin-top:18px;
-}
-
-.card{
-  grid-column:span 12;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:22px;
-  box-shadow:var(--shadow);
-}
-
-@media(min-width:860px){
-  .card.half{grid-column:span 6}
-}
-
-.tag{
-  display:inline-block;
-  margin-right:6px;
-  margin-top:10px;
-  padding:3px 8px;
-  font-size:12px;
-  border-radius:999px;
-  background:#eef2ff;
-  color:#3730a3;
-  border:1px solid #c7d2fe;
-}
-
-.muted{color:var(--muted)}
-
-.btn{
-  display:inline-block;
-  margin-right:10px;
-  margin-top:10px;
-  padding:10px 14px;
-  border-radius:10px;
-  border:1px solid var(--border);
-  background:white;
-  box-shadow:var(--shadow);
-}
-
-footer{
-  margin-top:50px;
-  font-size:14px;
-  color:var(--muted);
-}
-</style>
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="container">
 
-<!-- SAME NAVIGATION AS HOMEPAGE -->
 <header>
   <div class="row">
     <h1>Gretta Martin</h1>
-  </div>
-  <div>
-    <span class="pill">Project Case Study</span>
+    
   </div>
 
   <nav>
-    <a href="../index.html#experience">Experience</a>
-    <a href="../index.html#projects">Projects</a>
-    <a href="../index.html#skills">Skills</a>
-    <a href="../index.html#about">About</a>
-    <a href="../index.html#contact">Contact</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills/Certifications</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>Ethics in Motion</h1>
+  <h3>Ethics in Motion</h3>
   <p class="sub">
-    Interactive simulation software exploring ethical decision-making in
-    autonomous vehicle scenarios. Developed as undergraduate research and
-    expanded into a distinguished senior thesis project.
+    Interactive simulation software exploring ethical decision-making in autonomous vehicle scenarios.
+    Developed as undergraduate research and expanded into a distinguished senior thesis project.
   </p>
 
-  <a class="btn" href="https://github.com/YOUR_REPO">View Repository</a>
-  <a class="btn" href="#">Demo / Screenshots</a>
+  
 </section>
 
-<!-- OVERVIEW -->
 <section class="grid">
-<div class="card">
-<h2>Overview</h2>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>
+      Ethics in Motion is a Python-based simulation platform designed to explore how algorithmic systems make ethical decisions
+      under uncertainty. The system generates realistic dilemma scenarios using configurable templates and demographic probabilities,
+      allowing users to evaluate how decision rules affect outcomes across populations.
+    </p>
+    <p class="muted">
+      The project was designed for classroom use in computer science ethics education at CSB/SJU in CSCI 150 and supports interactive experimentation with
+      decision algorithms.
+    </p>
 
-<p>
-Ethics in Motion is a Python-based simulation platform designed to explore
-how algorithmic systems make ethical decisions under uncertainty. The system
-generates realistic dilemma scenarios using configurable templates and
-demographic probabilities, allowing users to evaluate how decision rules
-affect outcomes across populations.
-</p>
-
-<p class="muted">
-The project was designed for classroom use in computer science ethics
-education and supports interactive experimentation with decision algorithms.
-</p>
-
-<span class="tag">Python</span>
-<span class="tag">Simulation</span>
-<span class="tag">Data Modeling</span>
-<span class="tag">Ethics</span>
-</div>
+    <span class="tag">Python</span>
+    <span class="tag">Simulation</span>
+    <span class="tag">Data Modeling</span>
+    <span class="tag">Ethics</span>
+  </div>
 </section>
 
-<!-- FEATURES -->
 <section class="grid">
-<div class="card half">
-<h2>Key Features</h2>
+  <div class="card half">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Template-based scenario generation</li>
+      <li>Demographic probability modeling using census data</li>
+      <li>Custom decision-function testing</li>
+      <li>Detection of “interesting” ethical edge cases</li>
+      <li>Automated statistics and visualization outputs</li>
+    </ul>
+  </div>
 
-<ul>
-<li>Template-based scenario generation</li>
-<li>Demographic probability modeling using census data</li>
-<li>Custom decision-function testing</li>
-<li>Detection of “interesting” ethical edge cases</li>
-<li>Automated statistics and visualization outputs</li>
-</ul>
-</div>
-
-<div class="card half">
-<h2>Technical Stack</h2>
-
-<ul>
-<li><strong>Backend:</strong> Python</li>
-<li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-<li><strong>Data:</strong> Census datasets</li>
-<li><strong>Architecture:</strong> modular simulation engine</li>
-</ul>
-</div>
+  <div class="card half">
+    <h2>Technical Stack</h2>
+    <ul>
+      <li><strong>Backend:</strong> Python</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Data:</strong> Census datasets</li>
+      <li><strong>Architecture:</strong> modular simulation engine</li>
+    </ul>
+  </div>
 </section>
 
-<!-- RESEARCH IMPACT -->
 <section class="grid">
-<div class="card">
-<h2>Research & Academic Impact</h2>
-
-<p>
-This project evolved into a distinguished senior thesis and includes the
-design of an IRB-approved user study evaluating how interactive simulations
-influence ethical reasoning in computer science education.
-</p>
-
-<p class="muted">
-The long-term goal is to better understand how software design choices shape
-human-centered outcomes in automated decision systems.
-</p>
-</div>
+  <div class="card">
+    <h2>Research & Academic Impact</h2>
+    <p>
+      This project evolved into a distinguished senior thesis and includes the design of an IRB-approved user study evaluating
+      how interactive simulations influence ethical reasoning in computer science education.
+    </p>
+    <p class="muted">
+      The long-term goal is to better understand how software design choices shape human-centered outcomes in automated decision systems.I hope to publish work 
+    </p>
+  </div>
 </section>
 
-<!-- LESSONS -->
 <section class="grid">
-<div class="card">
-<h2>What I Learned</h2>
-
-<ul>
-<li>Designing extensible simulation architectures</li>
-<li>Balancing technical implementation with ethical analysis</li>
-<li>Integrating real-world datasets into software systems</li>
-<li>Building research software for non-technical users</li>
-</ul>
-</div>
+  <div class="card">
+    <h2>What I Learned</h2>
+    <ul>
+      <li>Designing extensible simulation architectures</li>
+      <li>Balancing technical implementation with ethical analysis</li>
+      <li>Integrating real-world datasets into software systems</li>
+      <li>Building software for beginner programmers</li>
+    </ul>
+  </div>
 </section>
 
 <footer>
-© <span id="y"></span> Gretta Martin
+  © <span id="y"></span> Gretta Martin
 </footer>
 
 </div>
